@@ -65,6 +65,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
     playlist = ConcatenatingAudioSource(children: [
       AudioSource.uri(
+        Uri.parse("https://fra.cloud.appwrite.io/v1/storage/buckets/6446e94107b80ee4ad44/files/6832678a0035acbd22bb/view?project=64358e9e3846b7c1cf48"),
+        tag: MediaItem(
+          id: '1',
+          album: "SoundHelix",
+          title: "SoundHelix-Song-1",
+          artist: "SoundHelix",
+          artUri: Uri.parse("https://fra.cloud.appwrite.io/v1/storage/buckets/6446e94107b80ee4ad44/files/6832678a0035acbd22bb/view?project=64358e9e3846b7c1cf48"), // Placeholder
+        ),
+ ),
+      AudioSource.uri(
         Uri.parse("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"),
         tag: MediaItem(
           id: '1',
@@ -115,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
       audioPlayer.play();
     }
   }
+  @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
